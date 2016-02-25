@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1700);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.form-container {
+  padding-top: 200px;
+  max-width: 625px;
+}
+
+h1 {
+  color: #fff;
+}
+
+
+.form-control-label {
+  color: #fff;
+  text-align: right;
+}

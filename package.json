@@ -1,0 +1,21 @@
+{
+  "name": "boomi-ilmo",
+  "version": "1.0.0",
+  "description": "Liikunta-appron ilmokikkare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kai-Mikael Alanne",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/kmalanne/boomsport-appro.git"
+  }
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.9.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
