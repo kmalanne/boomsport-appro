@@ -5,23 +5,37 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1700);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../content/bg.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+  position: relative;
 }
 
 .form-container {
-  padding-top: 200px;
-  max-width: 625px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 625px;
+  width: 625px;
 }
 
 h1 {
   color: #fff;
 }
 
-
 .form-control-label {
   color: #fff;
-  text-align: right;
+  text-align: center;
+}
+
+textarea, input {
+  padding:10px;
+  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
