@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BoomSport liikunta-appro</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div class="container form-container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Liikunta-appro ilmottautuminen</h1>
+      </div>
+    </div>
+    <form action="/registrations" method="post" enctype="application/json">
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="&#xf007; Nimi">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="email" placeholder="&#xf0e0; Email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 form-control-label">10-11</label>
+        <div class="col-sm-10">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="activity1" value="activity1" autocomplete="off" checked>Yritys1
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity1" value="activity2" autocomplete="off">Yritys2
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity1" value="activity3" autocomplete="off">Yritys3
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity1" value="activity4" autocomplete="off">Yritys4
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity1" value="activity5" autocomplete="off">Yritys5
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 form-control-label">11-12</label>
+        <div class="col-sm-10">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="activity2" value="activity1" autocomplete="off" checked>Yritys1
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity2" value="activity2" autocomplete="off">Yritys2
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity2" value="activity3" autocomplete="off">Yritys3
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity2" value="activity4" autocomplete="off">Yritys4
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity2" value="activity5" autocomplete="off">Yritys5
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 form-control-label">12-13</label>
+        <div class="col-sm-10">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="activity3" value="activity1" autocomplete="off" checked>Yritys1
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity3" value="activity2" autocomplete="off">Yritys2
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity3" value="activity3" autocomplete="off">Yritys3
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity3" value="activity4" autocomplete="off">Yritys4
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity3" value="activity5" autocomplete="off">Yritys5
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 form-control-label">13-14</label>
+        <div class="col-sm-10">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="activity4" value="activity1" autocomplete="off" checked>Yritys1
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity4" value="activity2" autocomplete="off">Yritys2
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity4" value="activity3" autocomplete="off">Yritys3
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity4" value="activity4" autocomplete="off">Yritys4
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="activity4" value="activity5" autocomplete="off">Yritys5
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <button type="submit" class="btn btn-block btn-success">Ilmottaudu</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</body>
+</html>

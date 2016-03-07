@@ -39,3 +39,7 @@ textarea, input {
   font-weight: normal;
   text-decoration: inherit;
 }
+
+.btn-secondary:active, .btn-secondary.active, .open > .btn-secondary.dropdown-toggle {
+  background-color: #a4a4a4;
+}

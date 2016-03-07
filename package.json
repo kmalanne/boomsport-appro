@@ -2,20 +2,28 @@
   "name": "boomi-ilmo",
   "version": "1.0.0",
   "description": "Liikunta-appron ilmokikkare",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kai-Mikael Alanne",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/kmalanne/boomsport-appro.git"
-  }
+    "type": "git",
+    "url": "https://github.com/kmalanne/boomsport-appro.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^1.9.0"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.6",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   }
 }
