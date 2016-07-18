@@ -21,12 +21,12 @@
     <form action="/registrations" method="post" enctype="application/json">
       <div class="form-group row">
         <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="&#xf007; Nimi">
+          <input type="text" class="form-control" name="name" placeholder="&#xf007; Nimi">
         </div>
       </div>
       <div class="form-group row">
         <div class="col-sm-12">
-          <input type="text" class="form-control" id="email" placeholder="&#xf0e0; Email">
+          <input type="text" class="form-control" name="email" placeholder="&#xf0e0; Email">
         </div>
       </div>
       <div class="form-group row">
@@ -36,7 +36,7 @@
               <div class="btn-group" data-toggle="buttons">
                 <% _.each(singleClass.activities, function(activity){ %>
                   <label class="btn btn-secondary">
-                   <input type="radio" name='<%= activity.name %>' value='<%= activity.name %>' autocomplete="off"><%= activity.name %>
+                   <input type="radio" name='<%= singleClass.time %>' value='<%= activity.name %>'><%= activity.name %>
                   </label>
                 <% }); %>
               </div>
