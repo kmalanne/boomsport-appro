@@ -11,12 +11,8 @@ exports.createRegistration = function(req, res, next) {
   var success = true;
   for (var r in result){
     if (result.hasOwnProperty(r)) {
-         success = classController.updateAmounts(r, result[r]);
+         classController.updateAmounts(r, result[r]);
     }
-  }
-
-  if (!success) {
-    
   }
 
   var newRegistration = new Registration();
@@ -25,10 +21,11 @@ exports.createRegistration = function(req, res, next) {
   newRegistration.activities = result;
   newRegistration.save(function(err) {
     if (err) {
-      return next(err);
+      return renderRegistrationResult(req, res, "Epäonnistui!");
     }
     else {
-      res.json(newRegistration);
+      return renderRegistrationResult(req, res, "Onnistui!");
+      //res.json(newRegistration);
     }
   });
 };
@@ -46,4 +43,8 @@ exports.getRegistrations = function(req, res, next) {
 
 exports.renderRegistrations = function(req, res) {
   res.render('registrations')
+};
+
+var renderRegistrationResult = function(req, res, result) {
+  res.render('registrationResult', {result: result});
 };
