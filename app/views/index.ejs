@@ -18,6 +18,15 @@
         <h1>Liikunta-appro ilmottautuminen</h1>
       </div>
     </div>
+    <% if(errors){ %>
+      <% _.each(errors, function(error){ %>
+      <div class="row">
+        <div class="col-sm-12 error">
+          <p><%= error.msg %></p>
+        </div>
+      </div>
+      <% }); %>
+    <% } %>
     <form action="/registration" method="post" enctype="application/json">
       <div class="form-group row">
         <div class="col-sm-12">
@@ -31,7 +40,7 @@
       </div>
       <div class="form-group row">
         <% _.each(classes, function(singleClass){ %>
-            <label class="col-sm-2 form-control-label"><%= singleClass.time %></label>
+          <label class="col-sm-2 form-control-label"><%= singleClass.time %></label>
             <div class="col-sm-10">
               <div class="btn-group" data-toggle="buttons">
                 <% _.each(singleClass.activities, function(activity){ %>

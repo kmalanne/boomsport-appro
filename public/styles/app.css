@@ -27,6 +27,10 @@ h1, h2 {
   color: #fff;
 }
 
+.error {
+  color: #f00;
+}
+
 .form-control-label {
   color: #fff;
   text-align: center;
